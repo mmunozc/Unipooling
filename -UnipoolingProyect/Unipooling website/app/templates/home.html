@@ -1,0 +1,87 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Login and Registration</title>
+    <link rel="stylesheet" href='{%static "styles/inicio.css" %}'>
+    <link rel="stylesheet" href='{%static "styles/foot.css" %}'>
+    <link rel="stylesheet" href='{%static "styles/horario.css" %}'>
+    <link rel="stylesheet" href='{%static "styles/nav.css" %}'>
+    <link rel="stylesheet" href='{%static "styles/registr.css" %}'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+    <div class="container">
+        <input type="checkbox" id="flip">
+        <div class="cover">
+            <div class="front">
+                <img src="{% static 'images/logo.jpg' %}" alt="">
+            </div>
+            <div class="back">
+                <img src="{% static 'images/logo.jpg' %}" alt="">
+                <div class="text">
+                </div>
+            </div>
+        </div>
+        <div class="forms">
+            <div class="form-content">
+                <div class="login-form">
+                    <div class="title">Iniciar Sesión</div>
+                    <form action="#">
+                        <div class="input-boxes">
+                            <div class="input-box">
+                                <i class="fas fa-envelope"></i>
+                                <input type="text" placeholder="Ingresa tu correo" required>
+                            </div>
+                            <div class="input-box">
+                                <i class="fas fa-lock"></i>
+                                <input type="password" placeholder="Ingresa tu contraseña" required>
+                            </div>
+                            <div class="text"><a href="{% url 'principal' %}">Olvidaste la contraseña?</a></div>
+                            <div class="button input-box">
+                                <input type="submit" value="Ingresa">
+                            </div>
+                            <div class="text sign-up-text">No tienes cuenta? <label for="flip">Registrate!</label></div>
+                        </div>
+                    </form>
+                </div>
+                <div class="signup-form">
+                    <div class="title">Registro</div>
+                    <form method="post" action="#">
+                        <div class="input-boxes">
+                            <div class="input-box">
+                                <i class="fas fa-user"></i>
+                                <input type="text" placeholder="Ingresa tu nombre completo" required>
+                            </div>
+                            <div class="input-box">
+                                <i class="fas fa-house-user"></i>
+                                <input type="text" placeholder="Ingresa Universidad" required>
+                            </div>
+                            <div class="input-box">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" placeholder="Ingresa tu correo" required>
+                            </div>
+                            <div class="input-box">
+                                <i class="fas fa-lock"></i>
+                                <input type="password" placeholder="Ingresa contraseña" required>
+                            </div>
+                            <div class="button input-box">
+                                <input type="submit" value="Enviar">
+                            </div>
+                            <div class="text sign-up-text">Ya estás registrado? <label for="flip">Inicia sesión</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

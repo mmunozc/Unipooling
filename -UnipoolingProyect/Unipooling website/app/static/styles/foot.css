@@ -1,0 +1,41 @@
+.footer{
+    background: #081f3d;
+    padding: 5px;
+
+    bottom: 0;
+    width: 100%;
+    
+}
+
+.footer .container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.footer .container .listas{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.footer .container ul{
+    margin:auto;
+}
+
+.footer .container ul li{
+    line-height: 2.8;
+}
+
+.footer .container ul li a{
+    color: #fff;
+    font-size: 12px;
+}
+
+.footer .container ul h3{
+    font-size: 17px;
+    color: #fff;
+    text-transform: uppercase;
+}

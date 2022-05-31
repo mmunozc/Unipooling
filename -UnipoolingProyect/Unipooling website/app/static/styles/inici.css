@@ -1,0 +1,174 @@
+/* Add a black background color to the top navigation */
+html{
+  height: 100%;
+}
+
+body {
+  overflow: hidden;
+  justify-content: center;
+  background-color: #0b3c7c;
+  margin: 0px;
+  overflow: hidden;
+  justify-content: center;
+  background-color:#0b3c7c;
+  margin: 0px;
+  padding-bottom: 100px;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
+  min-height: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 5.5rem;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+  width: .30rem;
+  border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #b3b3b3;
+  border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background-color: rgba(255, 255, 255, 0.624);
+}
+
+
+form {
+  margin: 0px 300px 0 300px;
+  padding: 20px;
+  font-size: 2rem;
+}
+
+input {
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #081f3d;
+  outline: 0;
+  background: rgba(255, 255, 255, 0.466);
+  padding: 5px 0 4px;
+  color: black;
+}
+
+input:focus {
+  border-color: #238662;
+  color: #2c3238;
+}
+
+button#submit {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  background: #119c3f;
+  color: #fff;
+  border: 0;
+  border-radius: 2px;
+
+  transition: 0.35s linear;
+}
+
+button#submit:hover {
+  opacity: 0.7;
+}
+
+.link{
+  font-size: 20px;
+  text-align: center;
+}
+
+.link a{
+  color: #ff0000;
+}
+
+.notification {
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 2rem;
+}
+.success {
+  background: #238662;
+  color: white;
+}
+.error {
+  background: #ab3444;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.info {
+  height: auto;
+  width: auto;
+  margin: 30px 120px 30px 120px;
+  background-color: rgba(255, 255, 255, 0.705);
+  justify-items: center;
+  padding: 5px;
+}
+
+.info h1 {
+  font-size: 62px;
+  text-align: center;
+  margin: 70px 0 70px;
+}
+
+.info p {
+  font-size: 15px;
+  text-align: center;
+  margin: 10px 0 40px;
+  color: black;
+}
+
+.boton {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 70px;
+}
+
+.hero-btn:hover {
+  border: 1px solid #345177;
+  background: #568cd1;
+  transition: 1.5s;
+}
+
+
+

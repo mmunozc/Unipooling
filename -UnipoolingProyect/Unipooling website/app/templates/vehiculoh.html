@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+
+{% block content%}
+<div class="info">
+
+        <form class="form" method="post" action="">
+            {% csrf_token %}
+            {{ formr }}
+    
+    
+            <button type="submit" id="submit">Registrar vehiculo</button>
+        </form>
+    
+</div>
+
+{% endblock %}

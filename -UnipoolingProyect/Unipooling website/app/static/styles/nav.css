@@ -1,0 +1,43 @@
+.topnav {
+    background-color: #081f3d;
+    width: 100%;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .topnav .usuario {
+    position: absolute;
+    right: 30px;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 2px;
+  }
+  
+  .topnav .usuario a:hover {
+    color: #238662;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    color: white;
+  }
+  
+  
+  .topnav .icon {
+    display: flex;
+  }

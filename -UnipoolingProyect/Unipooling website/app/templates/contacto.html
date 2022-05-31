@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+{%load static%}
+
+{% block content %}
+
+<div class="info">
+
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Email</th>
+            <th scope="col">Celular</th>
+            <th scope="col">Univeridad</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <th> {{ Creador.user.username }} </th>
+            <td> {{ Creador.user.email }} </td>
+            <td> {{ Creador.user.celular }} </td>
+            <td> {{ Creador.user.universidad }} </td>
+            </tr>
+
+</div>
+
+{% endblock %}

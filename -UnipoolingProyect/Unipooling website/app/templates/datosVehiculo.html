@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{%load static%}
+
+{% block content %}
+
+<div class="info">
+    <h1>Tus datos:</h1>
+
+    <p> placa: {{ vehiculo.first }}  </p>
+
+
+
+    <div class="link">
+        <a href="{% url 'vehiculo'%}">Registra tu vehiculo</a>
+    </div>
+</div>
+
+{% endblock %}

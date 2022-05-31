@@ -1,0 +1,59 @@
+{% extends 'layout.html' %}
+
+{% block content%}
+<div class="info">
+    <div>
+        <table class="table table-striped" id="table-gastos">
+            <thead>
+                <tr>
+                    <td>#</td>
+                    <td>LugarSalida</td>
+                    <td>LugarLlegada</td>
+                    <td>Ruta</td>
+                    <td>fechaSalida</td>
+                    <td>Contacto</td>
+                </tr>
+            </thead>
+            <tbody>
+                {% if rutas %}
+                {% for ruta in rutas %}
+                <tr>
+                    <td>{{ruta.id}}</td>
+                    <td>{{ruta.lugarSalida}}</td>
+                    <td>{{ruta.lugarLlegada}}</td>
+                    <td>{{ruta.ruta}}</td>
+                    <td>{{ruta.fechaSalida}}</td>
+                    <td> <a href = "{% url "contacto" pk=ruta.id %}" class="btn btn-success">Contacto</button> </td>
+                <tr>
+                {%endfor%}
+                {%endif%}
+            </tbody>
+        </table>
+		<br>
+		<br>	
+        <div class="d-grid gap-2 col-2 mx-auto">
+            <a href="{% url 'registroRuta' %}"><button type="button" class="btn btn-primary">Registrar
+                    Ruta</button></a>
+        </div>
+    </div>
+
+
+</div>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
